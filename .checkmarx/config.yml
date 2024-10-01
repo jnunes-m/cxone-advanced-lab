@@ -12,6 +12,7 @@ checkmarx:
         # configure the SAST preset name used for this specific project
         presetName: 'High and Medium'
          # configure if this specific project will be run incrementally or will it run a full scan 
+        filter: '../test/**,Exclude'
         incremental: 'false'
         languageMode: 'multi'
         engineVerbose: 'true'
